@@ -12,3 +12,5 @@ from ase.db import connect
 db = connect('database.db')
 row = db.select(id=1)[0]
 dir(row)
+
+#gui database.db

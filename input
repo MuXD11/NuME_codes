@@ -1,0 +1,61 @@
+!Species-specific info
+atoms_file =’Si_size10_set_pka200_temp300_potenialgap.xyz’
+pot_file =’gap_files/Si.ZBL-stiff.TGAP.gap ’
+n_species =1
+species =Si
+masses =28.085
+!
+! MD options
+md_nsteps = 30
+!
+! Adaptive timestep
+adaptive_time = .true.
+adapt_tstep_interval=1
+adapt_tmin = 1.0E-10
+adapt_tmax = 1.0
+adapt_xmax = 0.1
+adapt_emax = 30
+!
+!Electronic system
+nonadiabatic_processes= .true .
+eph_fdm_option = 1
+eph_friction_option = 1
+eph_random_option = 1
+eph_betafile = ’aux_files/Si_PRB2021_quadratic.beta’
+!
+eph_box_limits = -20.0 74.7002325841 -20.0 74.7002325841 -20.0
+74.7002325841 ! set it to be bigger than the size of your cell
+eph_box_limits = 0.0 54.7002325841 0.0 54.7002325841 0.0 54.7002325841 !
+set it to be the size of your cell
+! parametres of electronic system
+eph_rho_e = 1.0
+eph_C_e = 3.5E-07
+eph_kappa_e = 0.1248
+! initial electronic temperature
+eph_Ti_e = 300.0
+! space mesh for el . system
+eph_gsx = 3
+eph_gsy = 3
+eph_gsz = 3
+!
+eph_md_last_step = 0
+eph_md_prev_time = 0.0
+eph_E_prev_time = 0.0
+eph_freq_Tout = 100
+eph_freq_mesh_Tout=10000
+eph_Toutfile = ’El_temp_mesh.out’
+!
+! Border thermostat
+! make group of border atoms
+make_group = inside block 6 5.5 49.2 5.5 49.2 5.5 49.2
+make_group = border subtract 2 all inside
+! thermostat
+thermostat = "berendsen"
+thermostat_groupID = border
+t_beg = 300. # in K
+t_end = 300. # in K
+tau_t = 100. # in fs
+!
+! Writeouts
+write_thermo = 1
+write_xyz = 1000

@@ -6,4 +6,5 @@
 #---------------------------------------------------------------
 
 # srun /path/to/turbogap/turbogap  md
-srun /path/to/turbogap/turbogap  md
+srun /home/enec1/turbogap/bin/turbogap md
+

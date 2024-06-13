@@ -1,10 +1,10 @@
-#!/bin/bash"
+#!/bin/bash
 #SBATCH --time=40:00:00
 #SBATCH --ntasks=20
 #SBATCH --mem-per-cpu=2G
 #SBATCH --job-name=tgap_tutorial
 #---------------------------------------------------------------
-
+module load gcc openmpi openblas
 # srun /path/to/turbogap/turbogap  md
 srun /home/enec1/turbogap/bin/turbogap md
 

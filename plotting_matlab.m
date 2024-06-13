@@ -26,8 +26,16 @@ data = table(data{1}, data{2}, data{3}, data{4}, data{5}, data{6}, ...
 % Plot Temperature vs. Time
 figure;
 plot(data.Time, data.Temperature, 'DisplayName', 'Temperature');
-xlabel('Time');
-ylabel('Temperature');
+xlabel('Time(fs)');
+ylabel('Temperature(K)');
 title('Temperature vs. Time');
+legend;
+grid on;
+
+figure;
+plot(data.Time, data.E_kin, 'DisplayName', 'Temperature');
+xlabel('Time (fs)');
+ylabel('Kinetic energy(eV)');
+title('Ekin vs. Time');
 legend;
 grid on;

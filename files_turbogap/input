@@ -1,5 +1,5 @@
 !Species-specific info
-atoms_file = 'Si_size10_equil_temp300_potenialgap.xyz'
+atoms_file = 'Si_size10_equil_temp300_potenialgap_multiple_impact.xyz'
 pot_file = 'gap_files/Si.ZBL-stiff.TGAP.gap'
 n_species = 1
 species = Si

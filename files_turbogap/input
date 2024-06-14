@@ -56,4 +56,4 @@ tau_t = 100. # in fs
 !
 ! Writeouts
 write_thermo = 1
-write_xyz = 1000
+write_xyz = 1

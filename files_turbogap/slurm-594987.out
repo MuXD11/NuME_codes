@@ -1,108 +1,0 @@
- _________________________________________________________________ 
-                              _                                   \
-  ___________            __   \\ /\        _____     ___   _____  |
- /____  ____/           / / /\|*\|*\/\    / ___ \   /   | |  _  \ |
-     / / __  __  __    / /  \********/   / /  /_/  / /| | | / | | |
-    / / / / / / / /_  / /__  \**__**/   / / ____  / / | | | |_/ / |
-   / / / / / / / __/ / ___ \ /*/  \*\  / / /_  / / /__| | |  __/  |
-  / / / /_/ / / /   / /__/ / \ \__/ / / /___/ / / ____  | | |     |
- /_/_/_____/_/_/___/______/___\____/__\______/_/_/____|_|_|_|____ |
- _____________________________________________________________  / |
- *************************************************************|/  |
-                   Welcome to the TurboGAP code                   |
-                          Maintained by                           |
-                                                                  |
-                          Miguel A. Caro                          |
-                        mcaroba@gmail.com                         |
-                       miguel.caro@aalto.fi                       |
-                                                                  |
-           Department of Chemistry and Materials Science          |
-                      Aalto University, Finland                   |
-                                                                  |
- .................................................................|
-                                                                  |
- ====================>>>>>  turbogap.fi  <<<<<====================|
-                                                                  |
- .................................................................|
-                                                                  |
- Contributors (code and methodology) in chronological order:      |
-                                                                  |
- Miguel A. Caro, Patricia Hernández-León, Suresh Kondati          |
- Natarajan, Albert P. Bartók, Eelis V. Mielonen, Heikki Muhli,    |
- Mikhail Kuklin, Gábor Csányi, Jan Kloppenburg, Richard Jana,     |
- Tigany Zarrouk                                                   |
-                                                                  |
- .................................................................|
-                                                                  |
-                      Last updated: June. 2023                     |
-                                         _________________________/
- .......................................|
-                                        |
- Running TurboGAP with MPI support:     |
-                                        |
- Running TurboGAP on     20 MPI tasks   |
-                                        |
- .......................................|
-                                        |
- Checking input file...                 |
-                                        |
- WARNING: default vdW reference parame- |
- ters not available for element:        |
-                                        |
- Si                                     |
-                                        |
- You can safely disregard this warning  |
- if your potential does not use van der |
- Waals corrections. Otherwise, or if you|
- want to overrride the defaults, you    |
- need to provide your own definitions of|
- vdw_c6_ref, vdw_r0_ref and             |
- vdw_alpha0_ref in the input file.      |
-                                        |
- .......................................|
- ~MESSAGE~: No eph_Tinfile is provided,
- using given/default input parameters!
-                                        |
- You specified the following options:   |
-                                        |
- ---------------------------------      |
- Atoms file = Si_size10_equil_temp...   |
- ---------------------------------      |
- No. of species   = 1                   |
-   *) Species #1  =             Si      |
- ---------------------------------      |
- rcut_max =          5.0000 Angst.      |
- ---------------------------------      |
-                                        |
- .......................................|
-                                        |
- Doing molecular dynamics...            |
- [                                    ] |
-        3989  atoms in group inside          
-        4011  atoms in group border          
- [.                                   ] | [..                                  ] | [...                                 ] | [....                                ] | [......                              ] | [.......                             ] | [........                            ] | [.........                           ] | [..........                          ] | [............                        ] | [.............                       ] | [..............                      ] | [...............                     ] | [................                    ] | [..................                  ] | [...................                 ] | [....................                ] | [.....................               ] | [......................              ] | [........................            ] | [.........................           ] | [..........................          ] | [...........................         ] | [............................        ] | [..............................      ] | [...............................     ] | [................................    ] | [.................................   ] | [..................................  ] | [....................................] |
-                                        |
-      30 MD steps:       27.231 seconds |
-                                        |
- *     Read input:        0.780 seconds |
- * Read XYZ files:        0.821 seconds |
- * Neighbor lists:        0.272 seconds |
- *  GAP desc/pred:       21.244 seconds |
-     - soap_turbo:        9.551 seconds |
-     -         2b:        0.329 seconds |
-     -         3b:       11.260 seconds |
-     -   core_pot:        0.092 seconds |
-     -        vdw:        0.000 seconds |
- *  MD algorithms:        2.025 seconds |
- *  MPI comms.   :        0.983 seconds |
-     -  pos & vel:        0.045 seconds |
-     - E & F brc.:        0.864 seconds |
-     -  MPI misc.:        0.074 seconds |
- *  Miscellaneous:        1.107 seconds |
-                                        |
- *     Total time:       27.231 seconds |
-                                        |
- .......................................|
-                                        |
- End of execution                       |
- _______________________________________/

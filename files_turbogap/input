@@ -6,7 +6,7 @@ species = Si
 masses = 28.085
 !
 ! MD options
-md_nsteps = 30
+md_nsteps = 100
 !
 ! Adaptive timestep
 adaptive_time = .true.
